@@ -66,7 +66,7 @@ function renderOneAnimal(animal) {
 //Fetch requests
 //Get fetch for all animal resources
 function getAllAnimals() {
-  fetch("http://localhost:3000/animalData")
+  fetch("https://project-1-m20m.onrender.com/animalData")
     .then((res) => res.json())
     .then((animalData) =>
       animalData.forEach((animal) => renderOneAnimal(animal))
@@ -75,7 +75,7 @@ function getAllAnimals() {
 
 // Send a POST request to add a new animal to the database
 function adoptAnimal(animalObj) {
-  fetch("http://localhost:3000/animalData", {
+  fetch("https://project-1-m20m.onrender.com/animalData", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -88,7 +88,7 @@ function adoptAnimal(animalObj) {
 
 // Send a PATCH request to update the donation amount for an animal
 function updateDonation(animalObj) {
-  fetch(`http://localhost:3000/animalData/${animalObj.id}`, {
+  fetch(`https://project-1-m20m.onrender.com/animalData/${animalObj.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -101,7 +101,7 @@ function updateDonation(animalObj) {
 
 // Send a DELETE request to remove an animal from the database
 function deleteAnimal(id) {
-  fetch(`http://localhost:3000/animalData/${id}`, {
+  fetch(`https://project-1-m20m.onrender.com/animalData/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
