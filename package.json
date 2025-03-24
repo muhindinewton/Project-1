@@ -1,0 +1,23 @@
+{
+  "name": "project-one",
+  "version": "1.0.0",
+  "description": "This is a simple web application that allows users to add animals for adoption, track donations, and manage animal listings. The app interacts with a local JSON server to store and retrieve animal data.",
+  "main": "dom.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhindinewton/Project-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhindinewton/Project-1/issues"
+  },
+  "homepage": "https://github.com/muhindinewton/Project-1#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
